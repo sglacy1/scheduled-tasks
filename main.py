@@ -8,8 +8,8 @@ account_sid = os.environ["TWILIO_ACCOUNT_SID"]
 auth_token = os.environ["TWILIO_AUTH_TOKEN"]
 
 weather_parameters = {
-    "lat": 36.169941,
-    "lon": -115.139832,
+    "lat": 41.140240,
+    "lon": -104.818802,
     "units": "imperial",
     "appid": api_key,
     "cnt": 4
@@ -48,8 +48,8 @@ if will_rain:
     print(f"Twilio status: {message.status}")
     print(f"Twilio SID: {message.sid}")
 
-    print(message.status)
-    print(f"Weather IDs: {condition_list}")
-    print(f"will_rain = {will_rain}")
+print(message.status)
+print(f"Weather IDs: {condition_list}")
+print(f"will_rain = {will_rain}")
 
 
