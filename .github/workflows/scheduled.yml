@@ -42,15 +42,4 @@ jobs:
           OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
-        run: |
-          echo "=== CURRENT DIRECTORY ==="
-          pwd
-
-          echo "=== FILES IN REPOSITORY ==="
-          ls -la
-
-          echo "=== MAIN.PY CONTENT ==="
-          cat main.py
-
-          echo "=== RUNNING MAIN.PY ==="
-          python3 -u main.py
+        run: python3 -u main.py
