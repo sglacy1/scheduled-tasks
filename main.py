@@ -52,7 +52,7 @@ if will_rain:
     print(f"Twilio status: {message.status}")
     print(f"Twilio SID: {message.sid}")
 
-print(message.status)
+    print(message.status)
 print(f"Weather IDs: {condition_list}")
 print(f"will_rain = {will_rain}")
 
