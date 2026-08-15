@@ -45,7 +45,11 @@ if will_rain:
         body="It's going to rain today. Bring an ☂️",
         to='+18777804236'
     )
+    print(f"Twilio status: {message.status}")
+    print(f"Twilio SID: {message.sid}")
 
     print(message.status)
+    print(f"Weather IDs: {condition_list}")
+    print(f"will_rain = {will_rain}")
 
 
