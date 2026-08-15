@@ -39,12 +39,14 @@ for condition in condition_list:
         break
 
 if will_rain:
+    print("Rain detected - sending Twilio message")
     client = Client(account_sid, auth_token)
     message = client.messages.create(
         from_='+18444031304',
         body="It's going to rain today. Bring an ☂️",
         to='+18777804236'
     )
+    print(f"Message status: {message.status}")
     print(f"Twilio status: {message.status}")
     print(f"Twilio SID: {message.sid}")
 
